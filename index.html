@@ -30,20 +30,114 @@
 
     </script>
     <style>
+        header:hover {
 
-        body {
-            background-color: rgb(188, 209, 201);
+            display: block;
+            width: 50vw;
+            height: 2vw;
+            /*transform: scale(1);*/
+            color: rgb(207, 101, 181);
+            font-size: 5vw;
+            transform: translate(120px, 50%);
+            /*position: absolute;*/
+
+
         }
 
+        header {
 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: larger;
+            color: rgb(5, 5, 56);
+            margin-left: 15%;
+            margin-top: 3%;
+            margin-right: 3%;
+            /*animation: mover 4s linear 1s infinite alternate running;*/
+
+        }
+
+        body {
+            background-color: rgb(241, 235, 199);
+
+        }
+
+        @keyframes mover {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
+        .nums {
+            animation: mover ease 1s backwards;
+        }
+
+        main {
+
+            margin-top: 15%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+        }
+
+        @keyframes mov {
+            from {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        #fecha {
+            animation: mov ease 3s backwards;
+
+        }
+
+        div {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(118, 15, 202);
+            font-weight: bold;
+
+        }
+
+        footer {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            color: rgb(175, 49, 3);
+            text-align: center;
+            position: absolute;
+
+
+        }
+
+        footer:hover {
+
+            transform: rotate(-180deg);
+            transition-duration: 4s;
+            /* transform: traslate(200px, 150px) rotate(20deg);*/
+        }
     </style>
 </head>
 
 <body>
-    <header></header>
+    <header> Primitiva Bailona </header>
     <main>
         <div class="nums">
-            <div>1</div>
+            <div class>1</div>
             <div>2</div>
             <div>3</div>
             <div>4</div>
@@ -55,7 +149,7 @@
             <div id="fecha">Fecha del sorteo: </div>
         </div>
     </main>
-    <footer></footer>
+    <footer> Yolanda Morales Zamora </footer>
 </body>
 
 </html>
